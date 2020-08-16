@@ -6,6 +6,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { FormComponent } from './components/form/form.component';
 import { PeliculasComponent } from './components/peliculas/peliculas.component';
 import { PageComponent } from './components/page/page.component';
+import { ErrorComponent } from './components/error/error.component';
 
 const appRoutes: Routes = [
   {
@@ -31,6 +32,10 @@ const appRoutes: Routes = [
   {
     path: 'page-test',
     component: PageComponent,
+  },
+  {
+    path: '**',
+    component: ErrorComponent,
   },
 ];
 
