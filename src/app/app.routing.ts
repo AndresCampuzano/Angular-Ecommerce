@@ -26,7 +26,7 @@ const appRoutes: Routes = [
     component: FormComponent,
   },
   {
-    path: 'peliculas',
+    path: 'movies',
     component: PeliculasComponent,
   },
   {
