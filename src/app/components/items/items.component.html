@@ -1,0 +1,33 @@
+<h2 class="subheader">{{ itemTitle }}</h2>
+<button (click)="changeTitle()">Click me to change title</button>
+<hr />
+
+<h2>Show first item</h2>
+<!-- {{ items[0].title }}
+<img src="{{ items[0].image }}" alt="" srcset="" /> -->
+<h2>Items number</h2>
+{{ items.length }}
+
+<hr />
+
+<div id="articles" *ngFor="let item of items; let i = index">
+  <article class="article-item" id="article-template">
+    <div class="image-wrap">
+      <img
+        src="{{ item.image }}"
+        alt="{{ item.title }}"
+        title="{{ item.title }}"
+      />
+    </div>
+
+    <h2>{{ item.title }}</h2>
+    <span class="date">
+      Hace 5 minutos
+    </span>
+    <a href="#">See project</a>
+
+    <div class="clearfix"></div>
+  </article>
+
+  <!--AÑADIR ARTICULOS VIA JS-->
+</div>

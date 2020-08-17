@@ -8,17 +8,17 @@ export class MiComponente {
   public titulo: string;
   public comentario: string;
   public year: number;
-  public mostrarPeliculas: boolean;
+  public showItems: boolean;
 
   constructor() {
     this.titulo = 'Hola Mundo, soy mi componente';
     this.comentario = 'Este es mi primer componente';
     this.year = 2020;
-    this.mostrarPeliculas = true;
+    this.showItems = true;
     console.log('Componente mi-componente cargado!!');
   }
 
-  handlePeliculas() {
-    this.mostrarPeliculas = !this.mostrarPeliculas;
+  handleItems() {
+    this.showItems = !this.showItems;
   }
 }

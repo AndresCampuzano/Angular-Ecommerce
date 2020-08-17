@@ -3,10 +3,10 @@
 <p>{{ comentario }}</p>
 <p>Soy un parrafo en la vista</p>
 
-<button (click)="handlePeliculas()">Show/hide Peliculas</button>
+<button (click)="handleItems()">Show/hide items</button>
 
-<div *ngIf="mostrarPeliculas">
-  <app-peliculas></app-peliculas>
+<div *ngIf="showItems">
+  <app-items></app-items>
 </div>
 <app-pruebas></app-pruebas>
 <app-home></app-home>
