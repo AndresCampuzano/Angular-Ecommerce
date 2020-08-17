@@ -16,4 +16,8 @@ export class PageComponent implements OnInit {
       this.myName = params.name;
     });
   }
+
+  redirect() {
+    this._router.navigate(['./page-test', 'Andres']);
+  }
 }
